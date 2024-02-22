@@ -68,7 +68,8 @@ dependencies = {
 -- "3rd/image.nvim", -- Optional image support in preview window: See `# Preview Mode` for more information
 }, 
 },
-{"kyazdani42/blue-moon"}
+--blue moon theme
+{"kyazdani42/blue-moon"},
 }
 local opts = {}
 

@@ -82,12 +82,11 @@ history = 5000
 [window]
 title = "<--------->"
 opacity = 0.95
-decorations = "none"
-startup_mode = "Windowed"
+startup_mode = "Maximized"
 
 [cursor]
 blink_interval = 500
-blink_timeout = 5
+blink_timeout = 0
 
 [cursor.style]
 blinking = "Always"
