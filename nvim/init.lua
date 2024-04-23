@@ -157,8 +157,12 @@ require("Comment").setup()
 --editor bottom line
 require('lualine').setup()
 
---current theme: FALCON
-vim.cmd.colorscheme "falcon"
+--current theme cycle:
+-- falcon
+-- nvimgelion
+-- habamax
+-- blue-moon
+vim.cmd.colorscheme "nvimgelion"
 
 
 
