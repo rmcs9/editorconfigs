@@ -32,9 +32,13 @@ local plugins = {
 
 
 	-- code completion
-	{"ms-jpq/coq_nvim"},
-	{"ms-jpq/coq.artifacts"},
-	{"ms-jpq/coq.thirdparty"},
+	{	
+		"ms-jpq/coq_nvim",
+		dependencies={	
+			{"ms-jpq/coq.artifacts"},
+			{"ms-jpq/coq.thirdparty"},
+		}
+	},
 
 
 	-- undotree
@@ -42,11 +46,15 @@ local plugins = {
 
 
 	-- lspconfig and dependencies
-	{'neovim/nvim-lspconfig'},
-	{'hrsh7th/cmp-nvim-lsp'},
-	{'hrsh7th/nvim-cmp'},
-	{'L3MON4D3/LuaSnip'},
-
+	{
+		'neovim/nvim-lspconfig',
+		dependancies={
+			{'hrsh7th/cmp-nvim-lsp'},
+			{'hrsh7th/nvim-cmp'},
+			{'L3MON4D3/LuaSnip'},
+		}
+	},
+	
 
 	-- lua line {editor status line}
 	{'nvim-lualine/lualine.nvim',dependencies = { 'nvim-tree/nvim-web-devicons' }},
@@ -105,12 +113,12 @@ require("lazy").setup(plugins, opts)
 
 
 
-local builtin = require("telescope.builtin")
+local telescope = require("telescope.builtin")
 --FILE FINDING KEYBINDS
 --telescope file finder
-vim.keymap.set('n', '<leader>p', builtin.find_files, {})
+vim.keymap.set('n', '<leader>p', telescope.find_files, {})
 --telescope live grep
-vim.keymap.set('n', '<leader>o', builtin.live_grep, {})
+vim.keymap.set('n', '<leader>o', telescope.live_grep, {})
 --undo tree
 vim.keymap.set('n', '<leader>i', vim.cmd.UndotreeToggle, {})
 --neo tree
@@ -138,12 +146,15 @@ local coq = require("coq")
 lspconfig.clangd.setup(coq.lsp_ensure_capabilities())
 lspconfig.jdtls.setup(coq.lsp_ensure_capabilities()) 
 lspconfig.pyright.setup(coq.lsp_ensure_capabilities())
+lspconfig.kotlin_language_server.setup(coq.lsp_ensure_capabilities())
+lspconfig.gopls.setup(coq.lsp_ensure_capabilities())
+lspconfig.vtsls.setup(coq.lsp_ensure_capabilities())
 --turn on code completion
-vim.cmd("COQnow")
+vim.cmd("COQnow --shut-up")
 --treesitter
 local config = require("nvim-treesitter.configs")
 config.setup({
-	ensure_installed = {"c", "cpp", "lua", "java", "python"},
+	ensure_installed = {"c", "cpp", "lua", "java", "python", "kotlin", "go", "javascript"},
 	sync_install = false,
 	highlight = { enable = true },
 	indent = { enable = true },
@@ -162,7 +173,7 @@ require('lualine').setup()
 -- nvimgelion
 -- habamax
 -- blue-moon
-vim.cmd.colorscheme "nvimgelion"
+vim.cmd.colorscheme "blue-moon"
 
 
 
