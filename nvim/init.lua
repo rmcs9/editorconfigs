@@ -5,7 +5,6 @@ vim.cmd("set tabstop=4")
 vim.g.mapleader = ' '
 vim.opt.termguicolors = true
 
-
 --lazy pm setup
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
@@ -123,8 +122,6 @@ vim.keymap.set('n', '<leader>o', telescope.live_grep, {})
 vim.keymap.set('n', '<leader>i', vim.cmd.UndotreeToggle, {})
 --neo tree
 vim.keymap.set('n', '<leader>e', vim.cmd.Neotree, {})
---keybind for trouble errors
-vim.keymap.set("n", "<leader>t", function() require("trouble").toggle() end)
 -- space + r {file explorer}
 vim.keymap.set('n', '<leader>r', vim.cmd.Explore, {})
 
