@@ -47,30 +47,32 @@ white = "0x93a1a1"
 yellow = "0xb58900"
 
 [colors.primary]
-background = "0x1d1f23"
-foreground = "0xf0f0f0"
+background = "0x16161D"
+foreground = "0xfdf6e3"
 
 [env]
 TERM = "xterm-256color"
 
 [font]
-size = 15.0
+size = 17.0
 
 [font.bold]
-family = "BigBlueTermPlus Nerd Font"
+family = "Terminus (TTF)"
 style = "Bold"
 
 [font.bold_italic]
-family = "BigBlueTermPlus Nerd Font"
+family = "Terminus (TTF)"
 style = "Bold Italic"
 
 [font.italic]
-family = "BigBlueTermPlus Nerd Font"
+family = "Terminus (TTF)"
 style = "Italic"
 
 [font.normal]
-family = "BigBlueTermPlus Nerd Font"
+family = "Terminess Nerd Font"
 style = "Regular"
+
+
 
 [font.offset]
 x = 1
@@ -80,8 +82,7 @@ y = 1
 history = 5000
 
 [window]
-title = "ʕ•̫͡•ʕ*̫͡*ʕ•͓͡•ʔ-̫͡-ʕ•̫͡•ʔ*̫͡*ʔ-̫͡-ʔʕ•̫͡•ʕ*̫͡*ʕ•͓͡•ʔ-̫͡-ʕ•̫͡•ʔ*̫͡*ʔ-̫͡-ʔʕ•̫͡•ʕ*̫͡*ʕ•͓͡•ʔ-̫͡-ʕ•̫͡•ʔ*̫͡*ʔ-̫͡-ʔʕ•̫͡•ʕ*̫͡*ʕ•͓͡•ʔ-̫͡-ʕ•̫͡•ʔ*̫͡*ʔ-̫͡-ʔʕ•̫͡•ʕ*̫͡*ʕ•͓͡•ʔ-̫͡-ʕ•̫͡•ʔ*̫͡*ʔ-̫͡-ʔʕ•̫͡•ʕ*̫͡*ʕ•͓͡•ʔ-̫͡-ʕ•̫͡•ʔ*̫͡*ʔ-̫͡-ʔʕ•̫͡•ʕ*̫͡*ʕ•͓͡•ʔ-̫͡-ʕ•̫͡•ʔ*̫͡*ʔ-̫͡-ʔʕ•̫͡•ʕ*̫͡*ʕ•͓͡•ʔ-̫͡-ʕ•̫͡•ʔ*̫͡*ʔ-̫͡-ʔʕ•̫͡•ʕ*̫͡*ʕ•͓͡•ʔ-̫͡-ʕ•̫͡•ʔ*̫͡*ʔ-̫͡-ʔʕ•̫͡•ʕ*̫͡*ʕ•͓͡•ʔ-̫͡-ʕ•̫͡•ʔ*̫͡*ʔ-̫͡-ʔ"
-opacity = 0.95
+title = ""
 startup_mode = "Maximized"
 
 [cursor]
