@@ -95,15 +95,15 @@ local plugins = {
 		}, 
 	},
 
+	-- indent underlining and highlighting
+	{
+    "lukas-reineke/indent-blankline.nvim",
+    main = "ibl",
+    ---@module "ibl"
+    ---@type ibl.config
+    opts = {},
+	},
 
-	-- -- DAP client
-	-- {'mfussenegger/nvim-dap'},
-	-- -- dap ui
-	-- {'rcarriga/nvim-dap-ui'},
-	-- {'jay-babu/mason-nvim-dap.nvim', event = "VeryLazy",
-	-- 	opts = { handlers = {},}
-	-- },
-	
 
 	--THEMES
 	--blue moon theme
@@ -165,6 +165,20 @@ config.setup({
 	indent = { enable = true },
 })
 
+-- indent underlining setup
+require("ibl").setup()
+--indent underlining colorscheme
+vim.api.nvim_create_autocmd({ 'ColorScheme', 'FileType' }, {
+  callback = function ()
+    vim.cmd([[
+      hi IndentBlanklineChar gui=nocombine guifg=#444C55
+      hi IndentBlanklineSpaceChar gui=nocombine guifg=#444C55
+      hi IndentBlanklineContextChar gui=nocombine guifg=#FB5E2A
+      hi IndentBlanklineContextStart gui=underline guisp=#FB5E2A
+    ]])
+  end,
+})
+
 
 -- comment shortcuts
 -- "gc" to comment out line or selection
@@ -176,32 +190,5 @@ require('lualine').setup()
 --current theme cycle:
 -- falcon
 -- nvimgelion
--- habamax
 -- blue-moon
-vim.cmd.colorscheme "blue-moon"
-
-
-
---DEBUGGER STUFF FOR LATER IF U WANNA ADD:
---DAP's CAN BE INSTALLED THROUGH MASON 
---ALL U GOTTA DO IS SET UP THE UI PLUGINS
---https://www.youtube.com/watch?v=oYzZxi3SSnM
--- local dap = require("dap") 
--- local dapui = require("dapui")
--- require("mason-nvim-dap").setup()
--- vim.keymap.set('n', '<leader>b', dap.toggle_breakpoint, {})
--- vim.keymap.set('n', '<leader>n', dap.continue, {})
---
--- dapui.setup()
--- dap.listeners.before.attach.dapui_config = function()
---   dapui.open()
--- end
--- dap.listeners.before.launch.dapui_config = function()
---   dapui.open()
--- end
--- dap.listeners.before.event_terminated.dapui_config = function()
---   dapui.close()
--- end
--- dap.listeners.before.event_exited.dapui_config = function()
---   dapui.close()
--- end
+vim.cmd.colorscheme "nvimgelion"
