@@ -104,6 +104,8 @@ local plugins = {
     opts = {},
 	},
 
+	{'eandrju/cellular-automaton.nvim'},
+
 
 	--THEMES
 	--blue moon theme

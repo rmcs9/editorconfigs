@@ -29,6 +29,7 @@ I tend to cycle through these 3 themes to keep things interesting
 - [comment.nvim](https://github.com/numToStr/Comment.nvim)
 - [neo-tree.nvim](https://github.com/nvim-neo-tree/neo-tree.nvim)
 - [indent-blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim)
+- [cellular-automaton.nvim](https://github.com/eandrju/cellular-automaton.nvim)
 
 ## OTHER
 
