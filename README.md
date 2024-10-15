@@ -30,6 +30,7 @@ I tend to cycle through these 3 themes to keep things interesting
 - [neo-tree.nvim](https://github.com/nvim-neo-tree/neo-tree.nvim)
 - [indent-blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim)
 - [cellular-automaton.nvim](https://github.com/eandrju/cellular-automaton.nvim)
+- [nvim-osc52](https://github.com/ojroques/nvim-osc52) 
 
 ## OTHER
 

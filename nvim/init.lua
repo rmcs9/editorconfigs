@@ -106,6 +106,7 @@ local plugins = {
 
 	{'eandrju/cellular-automaton.nvim'},
 
+	{'ojroques/nvim-osc52'}, 
 
 	--THEMES
 	--blue moon theme
@@ -141,6 +142,14 @@ vim.opt.swapfile = false
 vim.opt.backup = false
 vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
 vim.opt.undofile = true
+
+--osc52 clipboard operations
+--copy given text in normal mode
+vim.keymap.set('n', '<leader>c', require('osc52').copy_operator, {expr = true})
+--copy given text on current line
+vim.keymap.set('n', '<leader>cc', '<leader>c_', {remap = true})
+--copy given text in visual mode
+vim.keymap.set('v', '<leader>c', require('osc52').copy_visual)
 
 
 --LSP CONFIGURATION
