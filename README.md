@@ -21,7 +21,7 @@ I tend to cycle through these 3 themes to keep things interesting
 - [lazy.nvim](https://github.com/folke/lazy.nvim)
 - [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)
 - [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
-- [coq_nvim](https://github.com/ms-jpq/coq_nvim)
+- [nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
 - [undotree](https://github.com/mbbill/undotree)
 - [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig)
 - [lua-line](https://github.com/nvim-lualine/lualine.nvim)
@@ -30,7 +30,6 @@ I tend to cycle through these 3 themes to keep things interesting
 - [neo-tree.nvim](https://github.com/nvim-neo-tree/neo-tree.nvim)
 - [indent-blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim)
 - [cellular-automaton.nvim](https://github.com/eandrju/cellular-automaton.nvim)
-- [nvim-osc52](https://github.com/ojroques/nvim-osc52) 
 
 ## OTHER
 
