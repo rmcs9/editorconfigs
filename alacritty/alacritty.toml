@@ -29,6 +29,8 @@ foreground = "0x657b83"
 [env]
 TERM = "xterm-256color"
 
+# 14.0 for styx 
+# 11.5 for les
 [font]
 size = 11.5
 
