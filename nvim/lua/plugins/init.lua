@@ -10,5 +10,6 @@ return {
 	-- falcon theme
 	{"fenetikm/falcon", name = "falcon", lazy = false, priority = 1000},
 	{"xero/miasma.nvim"},
-	{"rmcs9/gruber-darker.nvim"}
+	{"rmcs9/gruber-darker.nvim"},
+	{"ThePrimeagen/vim-be-good"},
 }
