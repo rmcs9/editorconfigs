@@ -4,15 +4,12 @@
 - tabs and panes: [tmux](https://github.com/tmux/tmux)
 - editor: [neovim](https://github.com/neovim/neovim) 
 
-![image](https://github.com/rmcs9/editorconfigs/assets/128118033/97715ae2-947d-4192-b932-1a3e7debd37f)
+# THEME
 
-# THEMES
-
-- [falcon](https://github.com/fenetikm/falcon)
-- [blue-moon](https://github.com/kyazdani42/blue-moon)
-- [nvimgelion](https://github.com/nyngwang/nvimgelion)
-
-I tend to cycle through these 3 themes to keep things interesting
+<!-- - [falcon](https://github.com/fenetikm/falcon) -->
+<!-- - [blue-moon](https://github.com/kyazdani42/blue-moon) -->
+<!-- - [nvimgelion](https://github.com/nyngwang/nvimgelion) -->
+[gruber-darker.nvim](https://github.com/rmcs9/gruber-darker.nvim)
 
 # PLUGINS
 
