@@ -7,5 +7,7 @@ return {
 		--FILE FINDING KEYBINDS
 		--telescope file finder
 		vim.keymap.set('n', '<leader>p', telescope.find_files, {})
+        vim.api.nvim_set_keymap('n', '<leader>m', '<Cmd>lua require"telescope.builtin".lsp_document_symbols({symbol="method"})<CR>', { noremap = true, silent = true })
+
 	end
 }
