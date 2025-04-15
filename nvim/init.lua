@@ -23,4 +23,4 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup("plugins")
 
-vim.cmd.colorscheme "gruber-darker"
+vim.cmd.colorscheme "nvimgelion"
