@@ -1,4 +1,5 @@
 return {
+
 	"nvim-neo-tree/neo-tree.nvim",
 	branch = "v3.x",
 	dependencies = {
@@ -10,8 +11,6 @@ return {
 	config = function() 
 		--neo tree
 		vim.keymap.set('n', '<leader>e', vim.cmd.Neotree, {})
-		-- space + r {file explorer}
-		vim.keymap.set('n', '<leader>r', vim.cmd.Explore, {})
 	end
 
 }
